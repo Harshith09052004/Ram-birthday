@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Chintuuu ❤️</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#ffe0ed,#fff1f7,#ffd6e8);
+    font-family:'Trebuchet MS',sans-serif;
+    color:#71384f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow-x:hidden;
+}
+
+.app{width:100%;max-width:520px}
+
+.header{text-align:center;margin-bottom:20px}
+.header h2{color:#d94b79;font-size:1.3rem}
+.header p{font-size:.85rem;margin-top:5px}
+
+.progress{
+    height:7px;
+    background:#f5c5d8;
+    border-radius:20px;
+    margin-top:15px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    height:100%;
+    width:0;
+    background:#e75480;
+    transition:width .4s;
+}
+
+.card{
+    display:none;
+    min-height:410px;
+    background:rgba(255,255,255,.96);
+    border:2px solid #ffe0ec;
+    border-radius:30px;
+    padding:35px 25px;
+    box-shadow:0 12px 35px rgba(180,80,120,.17);
+    text-align:center;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    animation:appear .45s ease;
+}
+
+.card.active{display:flex}
+
+@keyframes appear{
+    from{opacity:0;transform:translateY(20px) scale(.97)}
+    to{opacity:1;transform:translateY(0) scale(1)}
+}
+
+.emoji{font-size:65px;margin-bottom:20px}
+
+h1{
+    color:#e75480;
+    font-size:clamp(1.8rem,7vw,2.5rem);
+    margin-bottom:18px;
+}
+
+h2{color:#d94b79;margin-bottom:18px}
+
+p{
+    font-size:1.04rem;
+    line-height:1.8;
+    margin:7px 0;
+}
+
+.highlight{color:#e75480;font-weight:bold}
+
+.navigation{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+    gap:12px;
+}
+
+button{
+    background:#e75480;
+    color:white;
+    border:none;
+    padding:13px 24px;
+    border-radius:30px;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.2s;
+}
+
+button:hover{background:#c93669;transform:scale(1.04)}
+button:disabled{opacity:.35;cursor:not-allowed;transform:none}
+
+#pageNumber{text-align:center;margin-top:12px;color:#b75a7b;font-size:.9rem}
+
+#reply{margin-top:15px;color:#e75480}
+
+.cake{
+    font-size:85px;
+    cursor:pointer;
+    margin:15px;
+    transition:transform .3s;
+}
+
+.cake:hover{transform:scale(1.12)}
+
+#cakeMessage{color:#e75480;font-weight:bold}
+
+.heart{animation:beat 1s infinite}
+
+@keyframes beat{
+    50%{transform:scale(1.2)}
+}
+
+.letter{
+    border:1px dashed #e99ab8;
+    padding:18px;
+    border-radius:18px;
+    background:#fff7fa;
+    margin-top:10px;
+}
+
+.footer{text-align:center;margin-top:22px;color:#c45b82;font-size:.85rem}
+
+.particle{
+    position:fixed;
+    top:-20px;
+    pointer-events:none;
+    z-index:10;
+    animation:fall 3s linear forwards;
+}
+
+@keyframes fall{
+    to{transform:translateY(110vh) rotate(720deg);opacity:0}
+}
+
+@media(max-width:400px){
+    .card{min-height:430px;padding:25px 18px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+<div class="header">
+    <h2>🎀 Chintuuu's Birthday Surprise 🎀</h2>
+    <p>A little surprise from your permanent headache</p>
+    <div class="progress">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+</div>
+
+<!-- CARD 1 -->
+<div class="card active">
+    <div class="emoji">🎁</div>
+    <h1>Orey Ramya!</h1>
+    <h2>Ready aa nee surprise ki?</h2>
+    <p>Ee roju nee kosam oka special journey undhi!</p>
+    <p>Careful ga choodu... emotional avvachu, navvachu! 😂</p>
+    <p class="highlight">Two idiots, one friendship ❤️</p>
+</div>
+
+<!-- CARD 2 -->
+<div class="card">
+    <div class="emoji">🎂</div>
+    <h1>Happy Birthday!</h1>
+    <h2>Ramya ❤️</h2>
+    <p>Many many happy returns of the day, Chintuuu!</p>
+    <p>Keep smiling and keep irritating the world!</p>
+</div>
+
+<!-- CARD 3 -->
+<div class="card">
+    <div class="emoji">🤝</div>
+    <h2>How It All Started</h2>
+    <p>Infosys training lo kalisam...</p>
+    <p>Abdul valla friendship start ayyindi.</p>
+    <p>Less than one month lo permanent headache friendship ayipoyindi!</p>
+    <p>Unexpected ga start ayina friendship, special ga maarindi. ❤️</p>
+</div>
+
+<!-- CARD 4 -->
+<div class="card">
+    <div class="emoji">🌙</div>
+    <h2>Random Talks, Permanent Memories</h2>
+    <p>First meeting...</p>
+    <p>Daily night conversations...</p>
+    <p>Long phone calls...</p>
+    <p>Random topics meedha endless discussions...</p>
+    <p>Those little moments mean a lot to me. ❤️</p>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+    <div class="emoji">😂</div>
+    <h2>Our Legendary Conversation</h2>
+    <p><b>Harshith:</b></p>
+    <p>Arey bore kodthundhe Chintu, mood koddiga baledhe, nee day ela undhi?</p>
+    <p><b>Ramya:</b></p>
+    <h1>GOOD.</h1>
+    <p>Every single time... SAME ANSWER! 🤣</p>
+</div>
+
+<!-- CARD 6 -->
+<div class="card">
+    <div class="emoji">💌</div>
+    <h2>Our Special Dialogue</h2>
+    <p><b>Harshith:</b> Luv u broh ❤️</p>
+    <button onclick="showReply()">Tap to see Ramya's reply</button>
+    <h2 id="reply"></h2>
+</div>
+
+<!-- CARD 7 -->
+<div class="card">
+    <div class="emoji">😈</div>
+    <h2>Your Permanent Headache</h2>
+    <p>Ninnu tease cheyyadam naa duty.</p>
+    <p>Nuv ignore cheyyadam nee duty.</p>
+    <p>Fight start cheyyadam naa duty.</p>
+    <p>Malli matladadam mana friendship duty!</p>
+    <p class="highlight">Perfect friendship balance! 😂</p>
+</div>
+
+<!-- CARD 8 -->
+<div class="card">
+    <div class="emoji">💗</div>
+    <h2>A Little Possessive Bestie</h2>
+    <p>Konchem naatho kuda time spend cheyyi Chintu.</p>
+    <p>Nuv vere vallatho ekkuva matladithe jealous avutha. 😂</p>
+    <p>Sometimes messages ignore chesthe konchem feel avutha.</p>
+    <p>But nee happiness naaku chala important.</p>
+</div>
+
+<!-- CARD 9 -->
+<div class="card">
+    <div class="emoji">🥺</div>
+    <h2>Miss You, Chintu</h2>
+    <p>Nee absence nannu chala affect chesthundi.</p>
+    <p>Mana old conversations, nee excitement, aa random calls anni miss avuthunna.</p>
+    <p>I miss our old bond.</p>
+    <p>Koddiga naatho kuda time spend cheyyi.</p>
+</div>
+
+<!-- CARD 10 -->
+<div class="card">
+    <div class="emoji">❤️</div>
+    <h2>Things I Never Tell You</h2>
+    <div class="letter">
+        <p>Nuv happy ga unte chaalu, naaku ade happiness.</p>
+        <p>Sometimes I tease you, irritate you and fight with you...</p>
+        <p>But genuinely, I want you in my life forever.</p>
+    </div>
+</div>
+
+<!-- CARD 11 -->
+<div class="card">
+    <div class="emoji">🎂</div>
+    <h2>Make A Birthday Wish!</h2>
+    <p>Tap the cake and blow out your candles!</p>
+    <div class="cake" id="cake" onclick="celebrate()">🕯️🎂🕯️</div>
+    <p id="cakeMessage">One wish, Chintuuu! ✨</p>
+</div>
+
+<!-- CARD 12 -->
+<div class="card">
+    <div class="emoji">🤞</div>
+    <h2>My Promises To You</h2>
+    <p>I'll always make time for you.</p>
+    <p>I'll listen whenever you feel low.</p>
+    <p>I'll celebrate your happiness.</p>
+    <p>I'll stand beside you during difficult times.</p>
+    <p>I'll never intentionally let our friendship fade.</p>
+    <p>I'll keep teasing you even when we're old! 😂</p>
+</div>
+
+<!-- CARD 13 -->
+<div class="card">
+    <div class="emoji">💝</div>
+    <h1>One Last Promise</h1>
+    <h2>Let's stay and fight together forever!</h2>
+    <p>Whatever happens, I want you throughout my life as my friend.</p>
+    <p>Don't forget your permanent headache! 😂</p>
+</div>
+
+<!-- CARD 14 -->
+<div class="card">
+    <div class="emoji heart">❤️</div>
+    <h1>My Forever Bestie</h1>
+    <p>May you achieve everything you dream of.</p>
+    <p>Wishing you success, happiness and good health.</p>
+    <p>Keep smiling, Chintuuu!</p>
+    <h2>Luv u broh ❤️</h2>
+    <p>From your permanent headache 😂</p>
+    <h1>— Harshith</h1>
+</div>
+
+<div class="navigation">
+    <button id="prevBtn" onclick="changeCard(-1)" disabled>
+        ← Previous
+    </button>
+    <button id="nextBtn" onclick="changeCard(1)">
+        Next →
+    </button>
+</div>
+
+<div id="pageNumber"></div>
+
+<div class="footer">
+    Made with ❤️, unlimited teasing and friendship.
+</div>
+
+</div>
+
+<script>
+const cards = document.querySelectorAll(".card");
+const progressBar = document.getElementById("progressBar");
+const pageNumber = document.getElementById("pageNumber");
+
+let current = 0;
+
+function displayCard() {
+    cards.forEach((card,index)=>{
+        card.classList.toggle("active",index===current);
+    });
+
+    document.getElementById("prevBtn").disabled = current===0;
+
+    document.getElementById("nextBtn").textContent =
+        current===cards.length-1 ? "Replay ↻" : "Next →";
+
+    progressBar.style.width =
+        ((current+1)/cards.length*100)+"%";
+
+    pageNumber.textContent =
+        `Card ${current+1} of ${cards.length}`;
+
+    window.scrollTo({top:0,behavior:"smooth"});
+}
+
+function changeCard(direction) {
+    if(current===cards.length-1 && direction===1){
+        current=0;
+    } else {
+        current=Math.max(0,Math.min(cards.length-1,current+direction));
+    }
+
+    displayCard();
+}
+
+function showReply() {
+    document.getElementById("reply").textContent="Okay bro 😂❤️";
+}
+
+function celebrate() {
+    document.getElementById("cake").textContent="🎉🎂🎉";
+    document.getElementById("cakeMessage").textContent=
+        "Happy Birthday Chintuuu! May all your wishes come true! ❤️";
+
+    for(let i=0;i<45;i++){
+        const particle=document.createElement("div");
+        particle.className="particle";
+        particle.textContent=["🎉","💖","✨","🎊"][Math.floor(Math.random()*4)];
+        particle.style.left=Math.random()*100+"vw";
+        particle.style.animationDuration=(2+Math.random()*2)+"s";
+        particle.style.fontSize=(18+Math.random()*15)+"px";
+        document.body.appendChild(particle);
+
+        setTimeout(()=>particle.remove(),4000);
+    }
+}
+
+displayCard();
+</script>
+
+</body>
+</html>
